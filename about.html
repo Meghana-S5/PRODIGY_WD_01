@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="p1.css">
+</head>
+<body>
+  <div class="container" align="center">
+    <nav id="navbar">
+      <ul>
+        <li><a href="p1.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="content" align="center">
+      <p>This is <span>About Page</span> of Interactive Navigation Menu Project</p>
+    </div>
+  </div>
+<script>
+  window.addEventListener('scroll', function() {
+    var navbar = document.getElementById('navbar');
+    if (window.scrollY > 0) {
+      navbar.style.backgroundColor = '#00CED1'; // Change color when scrolled
+    } else {
+      navbar.style.backgroundColor = '#F4FAFC'; // Revert to original color
+    }
+  });
+</script>
+</body>
+</html>
